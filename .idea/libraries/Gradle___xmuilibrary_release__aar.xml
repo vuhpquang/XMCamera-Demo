@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: :xmuilibrary-release:@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f8f308b88188bb26d1a2bde0322ab041/jetified-xmuilibrary-release/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f8f308b88188bb26d1a2bde0322ab041/jetified-xmuilibrary-release/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f8f308b88188bb26d1a2bde0322ab041/jetified-xmuilibrary-release/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
