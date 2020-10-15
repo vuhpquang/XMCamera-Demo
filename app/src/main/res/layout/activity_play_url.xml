@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:uilib="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayUrlActivity">
+
+    <RelativeLayout
+        android:id="@+id/layoutPlayWnd"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_marginTop="48dp"
+        android:background="#ff000000" >
+
+        <com.lib.funsdk.support.widget.FunVideoView
+            android:id="@+id/funRecVideoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <RelativeLayout
+            android:id="@+id/videoProgressArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="5dp"
+            android:background="#8c000000"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:gravity="center_vertical">
+
+            <com.xm.ui.widget.ButtonCheck
+                android:id="@+id/btn_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                uilib:NormalBkg="@drawable/play"
+                uilib:SelectedBkg="@drawable/pause"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/videoProgressCurrentTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/btn_play"
+                android:textColor="#ffe0e0e0"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/videoProgressDurationTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="#ffe0e0e0"
+                android:textSize="12dp" />
+
+            <SeekBar
+                android:id="@+id/videoProgressSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/videoProgressDurationTime"
+                android:layout_toRightOf="@id/videoProgressCurrentTime"
+                android:maxHeight="5dp"
+                android:minHeight="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:progressDrawable="@drawable/video_control_seekbar_bg"
+                android:thumb="@drawable/video_control_seekbar_thumb_bg"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_link_1"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Link 1"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_link_2"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Link 2"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_link_3"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Link 3"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_link_4"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Link 4"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

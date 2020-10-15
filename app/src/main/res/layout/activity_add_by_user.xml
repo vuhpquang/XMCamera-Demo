@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddByUserActivity">
+
+    <RelativeLayout
+        android:id="@+id/layoutDeviceSN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/layoutDeviceType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/device_type"
+                android:textColor="@color/demo_title"
+                android:textSize="16dp" />
+
+            <Spinner
+                android:id="@+id/spinnerDeviceType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divLine"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/layoutDeviceType"
+            android:background="@color/bg_gray" />
+
+        <ImageButton
+            android:id="@+id/btnScanCode"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/divLine"
+            android:layout_alignParentRight="true"
+            android:background="#00000000"
+            android:gravity="center_vertical"
+            android:scaleType="fitCenter"
+            android:src="@drawable/input_sn_core" />
+
+        <EditText
+            android:id="@+id/editDeviceSN"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/divLine"
+            android:layout_toLeftOf="@id/btnScanCode"
+            android:background="#00000000"
+            android:hint="@string/device_login_sn"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="#ff101010"
+            android:textColorHint="#ffe0e0e0"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/devAddBtn"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutDeviceSN"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/device_opt_add"
+        android:textSize="18dp" />
+</RelativeLayout>

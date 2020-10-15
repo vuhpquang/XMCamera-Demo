@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.testproject.MainActivity">
+
+    <Button
+        android:id="@+id/btn_user"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginHorizontal="5dp"
+        android:text="1. User"
+        app:icon="@drawable/icon_user"
+        app:iconSize="50dp"
+        app:iconTint="@color/red" />
+
+    <Button
+        android:id="@+id/btn_device"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_below="@+id/btn_user"
+        android:layout_marginHorizontal="5dp"
+        android:text="2. Device"
+        app:icon="@drawable/icon_device"
+        app:iconSize="50dp"
+        app:iconTint="@color/green_like" />
+
+    <Button
+        android:id="@+id/btn_media"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_below="@id/btn_device"
+        android:layout_marginHorizontal="5dp"
+        android:text="3. Media"
+        app:icon="@drawable/icon_media"
+        app:iconSize="50dp"
+        app:iconTint="@color/blue_like" />
+
+    <Button
+        android:id="@+id/btn_play_url"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_below="@id/btn_media"
+        android:layout_marginHorizontal="5dp"
+        android:text="Play URL"
+        app:iconSize="50dp"
+        app:iconTint="@color/blue_like" />
+
+    <Button
+        android:id="@+id/btn_qr_test"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_below="@id/btn_play_url"
+        android:layout_marginHorizontal="5dp"
+        android:text="QR test" />
+
+</RelativeLayout>
