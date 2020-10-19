@@ -13,6 +13,7 @@ class DeviceActivity : AppCompatActivity(), View.OnClickListener {
 
         btn_users.setOnClickListener(this)
         btn_add.setOnClickListener(this)
+        btn_ethernet.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -22,6 +23,10 @@ class DeviceActivity : AppCompatActivity(), View.OnClickListener {
             }
             R.id.btn_users -> {
                 var intent = Intent(this, DeviceListUsersActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.btn_ethernet -> {
+                var intent = Intent(this, DeviceListLanActivity::class.java)
                 startActivity(intent)
             }
         }

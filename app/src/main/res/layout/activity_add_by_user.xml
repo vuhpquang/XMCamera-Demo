@@ -80,4 +80,25 @@
         android:padding="10dp"
         android:text="@string/device_opt_add"
         android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textTip"
+        android:layout_below="@id/devAddBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/demo_title"
+        android:text="@string/device_opt_add_tip"
+        android:padding="5dp"
+        />
+    <ListView
+        android:id="@+id/listOtherDevices"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textTip"
+        android:background="#fff0f0f0"
+        android:listSelector="@drawable/common_list_selector"
+        />
 </RelativeLayout>

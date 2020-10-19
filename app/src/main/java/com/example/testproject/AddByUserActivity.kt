@@ -56,14 +56,14 @@ class AddByUserActivity : AppCompatActivity(), View.OnClickListener,
         devAddBtn.setOnClickListener(this)
 
         // 初始化设备类型选择器
-        mSpinnerDevType = findViewById(R.id.spinnerDeviceType) as Spinner
+        mSpinnerDevType = findViewById<Spinner>(R.id.spinnerDeviceType)
         val spinnerStrs = arrayOfNulls<String>(mSupportDevTypes.size)
         for (i in mSupportDevTypes.indices) {
-            spinnerStrs[i] = resources.getString(mSupportDevTypes.get(i).getTypeStrId())
+            spinnerStrs[i] = resources.getString(mSupportDevTypes.get(i).typeStrId)
         }
         val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, spinnerStrs)
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-        mSpinnerDevType!!.setAdapter(adapter)
+        mSpinnerDevType!!.adapter = adapter
         mSpinnerDevType!!.setSelection(0)
         mCurrDevType = mSupportDevTypes.get(0)
         mSpinnerDevType!!.onItemSelectedListener = this

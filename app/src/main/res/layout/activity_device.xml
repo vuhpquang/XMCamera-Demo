@@ -4,70 +4,70 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DeviceActivity"
-    android:orientation="vertical">
-        <Button
-            android:id="@+id/btn_connect"
-            android:layout_width="match_parent"
-            android:layout_height="75dp"
-            android:text="2.1 Connect"
-            android:layout_marginHorizontal="5dp"
-            />
-        <Button
-            android:id="@+id/btn_nearap"
-            android:layout_below="@id/btn_connect"
-            android:layout_width="match_parent"
-            android:layout_height="75dp"
-            android:text="2.2 Near AP"
-            android:layout_marginHorizontal="5dp"
-            />
-        <Button
-            android:layout_below="@id/btn_nearap"
-            android:id="@+id/btn_ethernet"
-            android:layout_width="match_parent"
-            android:layout_height="75dp"
-            android:text="2.3 Ethernet"
-            android:layout_marginHorizontal="5dp"
-            />
-        <Button
-            android:id="@+id/btn_add"
-            android:layout_below="@id/btn_ethernet"
-            android:layout_width="match_parent"
-            android:layout_height="75dp"
-            android:text="2.4 Add by user"
-            android:layout_marginHorizontal="5dp"
-            />
-        <Button
-            android:layout_below="@id/btn_add"
-            android:id="@+id/btn_users"
-            android:layout_width="match_parent"
-            android:layout_height="75dp"
-            android:text="2.7 User's list"
-            android:layout_marginHorizontal="5dp"
-            />
-        <Button
-            android:id="@+id/btn_browse"
-            android:layout_below="@id/btn_users"
-            android:layout_width="match_parent"
-            android:layout_height="75dp"
-            android:text="2.8 Browse files"
-            android:layout_marginHorizontal="5dp"
-            />
-        <Button
-            android:id="@+id/btn_alarm"
-            android:layout_below="@id/btn_browse"
-            android:layout_width="match_parent"
-            android:layout_height="75dp"
-            android:text="2.9 Device Alarm"
-            android:layout_marginHorizontal="5dp"
-            />
-        <Button
-            android:id="@+id/btn_wifi"
-            android:layout_below="@id/btn_alarm"
-            android:layout_width="match_parent"
-            android:layout_height="75dp"
-            android:text="2.10 Wifi configuration"
-            android:layout_marginHorizontal="5dp"
-            />
+    android:orientation="vertical"
+    tools:context=".DeviceActivity">
+
+    <Button
+        android:id="@+id/btn_connect"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginHorizontal="5dp"
+        android:text="2.1 Connect" />
+
+    <Button
+        android:id="@+id/btn_nearap"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_below="@id/btn_connect"
+        android:layout_marginHorizontal="5dp"
+        android:text="2.2 Near AP" />
+
+    <Button
+        android:id="@+id/btn_ethernet"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_below="@id/btn_nearap"
+        android:layout_marginHorizontal="5dp"
+        android:text="2.3 Ethernet" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_below="@id/btn_ethernet"
+        android:layout_marginHorizontal="5dp"
+        android:text="2.4 Add by user" />
+
+    <Button
+        android:id="@+id/btn_users"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_below="@id/btn_add"
+        android:layout_marginHorizontal="5dp"
+        android:text="2.7 User's list" />
+
+    <Button
+        android:id="@+id/btn_browse"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_below="@id/btn_users"
+        android:layout_marginHorizontal="5dp"
+        android:text="2.8 Browse files" />
+
+    <Button
+        android:id="@+id/btn_alarm"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_below="@id/btn_browse"
+        android:layout_marginHorizontal="5dp"
+        android:text="2.9 Device Alarm" />
+
+    <Button
+        android:id="@+id/btn_wifi"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_below="@id/btn_alarm"
+        android:layout_marginHorizontal="5dp"
+        android:text="2.10 Wifi configuration" />
 
 </RelativeLayout>
