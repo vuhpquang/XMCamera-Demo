@@ -56,4 +56,6 @@ dependencies {
 
     // google vision library
     implementation 'com.google.android.gms:play-services-vision:20.1.2'
+
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.5'
 }
