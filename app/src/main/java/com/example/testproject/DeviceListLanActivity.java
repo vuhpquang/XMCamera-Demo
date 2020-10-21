@@ -97,7 +97,7 @@ public class DeviceListLanActivity extends ActivityDemo implements OnClickListen
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()) {
+        switch(v.getId()) {
         }
     }
 
@@ -161,13 +161,12 @@ public class DeviceListLanActivity extends ActivityDemo implements OnClickListen
 
     @Override
     public void onDeviceRemovedSuccess() {
-
+        Toast.makeText(this, "Device removed successfully", Toast.LENGTH_SHORT).show();
     }
 
 
     @Override
     public void onDeviceRemovedFailed(Integer errCode) {
-
     }
 
     @Override

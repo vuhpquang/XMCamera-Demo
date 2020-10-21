@@ -38,12 +38,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".camera.ScanQrActivity"></activity>
-        <activity android:name="com.google.zxing.activity.CaptureActivity"></activity>
+        <activity android:name=".ModifyActivity"></activity>
+        <activity android:name=".camera.ScanQrActivity" />
+        <activity android:name="com.google.zxing.activity.CaptureActivity" />
         <activity android:name=".AddByUserActivity" />
-        <activity
-            android:name=".MultiScreenActivity2"
-            />
+        <activity android:name=".MultiScreenActivity2" />
         <activity android:name=".MultiScreenActivity" />
         <activity android:name=".cloud.ActivityDevCloudPlayBack" />
         <activity android:name=".cloud.ActivityDevCloudTest" />
