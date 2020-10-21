@@ -30,7 +30,7 @@ class UserActivity : AppCompatActivity(), View.OnClickListener {
                 startActivity(intent)
             }
             R.id.btn_modify -> {
-                var intent = Intent(this, RegisterActivity::class.java)
+                var intent = Intent(this, ModifyActivity::class.java)
                 startActivity(intent)
             }
             R.id.btn_forgot -> {

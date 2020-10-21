@@ -56,7 +56,7 @@ public class DeviceListLanActivity extends ActivityDemo implements OnClickListen
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_add_by_user);
+        setContentView(R.layout.activity_device_list_users);
 
         mListView = (ExpandableListView) findViewById(R.id.listViewDevice);
         mAdapter = new ListAdapterFunDevice(this, mLanDeviceList);
